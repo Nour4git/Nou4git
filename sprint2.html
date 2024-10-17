@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #fff8e1; /* Jaune clair */
+            color: #333; /* Couleur du texte */
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin: 40px 0;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #ff9800; /* Orange */
+        }
+
+        h1::after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 4px;
+            background: #ffeb3b; /* Jaune vif */
+            margin: 20px auto 0;
+            border-radius: 2px;
+        }
+
+        .container {
+            padding: 20px;
+            background-color: #fff; /* Blanc */
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .card {
+            background: #ffcc80; /* Jaune orangé */
+            border: none;
+            border-radius: 10px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            overflow: hidden;
+        }
+
+        .card:hover {
+            transform: scale(1.05); /* Zoom */
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .card img {
+            border-radius: 10px 10px 0 0;
+            height: 200px;
+            object-fit: cover;
+            transition: transform 0.3s;
+        }
+
+        .card:hover img {
+            transform: scale(1.1); /* Zoom sur l'image */
+        }
+
+        .btn-primary, .btn-success {
+            border-radius: 20px;
+            transition: background-color 0.3s, transform 0.3s;
+            font-weight: bold;
+        }
+
+        .btn-primary {
+            background-color: #ff9800; /* Orange */
+            border: none;
+        }
+
+        .btn-primary:hover {
+            background-color: #e67e22; /* Orange foncé */
+            transform: scale(1.05); /* Légère augmentation */
+        }
+
+        .btn-success {
+            background-color: #ffc107; /* Jaune */
+            border: none;
+        }
+
+        .btn-success:hover {
+            background-color: #ffca28; /* Jaune clair */
+            transform: scale(1.05); /* Légère augmentation */
+        }
+
+        footer {
+            margin-top: 50px;
+            padding: 20px;
+            background-color: #ff9800; /* Orange */
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        footer p {
+            color: #ffffff; /* Texte blanc */
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>Bienvenue sur mon Portfolio</h1>
+        <p class="text-center">Découvrez mes projets et compétences.</p>
+        
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="project1.jpg" class="card-img-top" alt="Projet 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Projet 1</h5>
+                        <p class="card-text">Description de mon projet 1.</p>
+                        <a href="#" class="btn btn-primary">Voir le projet</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="project2.jpg" class="card-img-top" alt="Projet 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Projet 2</h5>
+                        <p class="card-text">Description de mon projet 2.</p>
+                        <a href="#" class="btn btn-primary">Voir le projet</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="project3.jpg" class="card-img-top" alt="Projet 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Projet 3</h5>
+                        <p class="card-text">Description de mon projet 3.</p>
+                        <a href="#" class="btn btn-primary">Voir le projet</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center mt-4">
+            <a href="cv.pdf" class="btn btn-success">Télécharger mon CV</a>
+        </div>
+    </div>
+    
+    <footer>
+        <p>© 2024 Mon Portfolio. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
+
+
